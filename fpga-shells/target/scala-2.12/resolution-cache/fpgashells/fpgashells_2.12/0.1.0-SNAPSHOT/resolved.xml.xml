@@ -4,7 +4,7 @@
 		module="fpgashells_2.12"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200224234100"
+		publication="20200319225040"
 	>
 		<description>
 		fpgaShells

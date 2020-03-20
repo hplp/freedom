@@ -1,22 +1,129 @@
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:31:5: Symbol 'type sifive.fpgashells.ip.xilinx.ua280mig.UA280MIGIOClocksReset' is missing from the classpath.[0m
-[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO'.[0m
-[0m[[0m[31merror[0m] [0m[0mMake sure that type UA280MIGIOClocksReset is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
-[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'XilinxUA280MIGIO.class' was compiled against an incompatible version of sifive.fpgashells.ip.xilinx.ua280mig.[0m
-[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_sys_clk_i := sys_clock.asUInt[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:31:24: value c0_sys_clk_i is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
-[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_sys_clk_i := sys_clock.asUInt[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:32:56: value c0_ddr4_ui_clk is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
-[0m[[0m[31merror[0m] [0m[0m    mig_clock                    := dut.xilinxua280mig.c0_ddr4_ui_clk[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:33:56: value c0_ddr4_ui_clk_sync_rst is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
-[0m[[0m[31merror[0m] [0m[0m    mig_sys_reset                := dut.xilinxua280mig.c0_ddr4_ui_clk_sync_rst[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:35:24: value c0_ddr4_aresetn is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
-[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_ddr4_aresetn   := mig_resetn[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:36:24: value sys_rst is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
-[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.sys_rst   := sys_reset[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr3/MicrosemiPolarFireDDR3.scala:152:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr3/MicrosemiPolarFireDDR3Periphery.scala:18:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Coreplex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr3/MicrosemiPolarFireDDR3Periphery.scala:19:30: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  polarfireddrsubsys.node := memBuses.head.toDRAMController(Some("PolarFireDDR"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr4/MicrosemiPolarFireDDR4.scala:153:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr4/MicrosemiPolarFireDDR4Periphery.scala:18:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Coreplex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_ddr4/MicrosemiPolarFireDDR4Periphery.scala:19:30: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  polarfireddrsubsys.node := memBuses.head.toDRAMController(Some("PolarFireDDR"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_pcie/PolarFireEvalKitPCIeX4.scala:12:8: object SynchronousCrossing is not a member of package freechips.rocketchip.subsystem[0m
+[0m[[0m[31merror[0m] [0m[0mimport freechips.rocketchip.subsystem.{HasCrossing, SynchronousCrossing, CacheBlockBytes}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_pcie/PolarFireEvalKitPCIeX4Periphery.scala:20:44: missing argument list for method crossTLOut in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossTLOut _` or `crossTLOut(_)(_)` instead of `crossTLOut`.[0m
+[0m[[0m[31merror[0m] [0m[0m  sbus.fromMaster(name) { pf_eval_kit_pcie.crossTLOut } := pf_eval_kit_pcie.master[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_pcie/PolarFireEvalKitPCIeX4Periphery.scala:21:77: missing argument list for method crossTLIn in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossTLIn _` or `crossTLIn(_)(_)` instead of `crossTLIn`.[0m
+[0m[[0m[31merror[0m] [0m[0m  pf_eval_kit_pcie.slave := sbus.toFixedWidthSlave(name) { pf_eval_kit_pcie.crossTLIn }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_pcie/PolarFireEvalKitPCIeX4Periphery.scala:22:79: missing argument list for method crossTLIn in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossTLIn _` or `crossTLIn(_)(_)` instead of `crossTLIn`.[0m
+[0m[[0m[31merror[0m] [0m[0m  pf_eval_kit_pcie.control := sbus.toFixedWidthSlave(name) { pf_eval_kit_pcie.crossTLIn }[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/microsemi/polarfire_pcie/PolarFireEvalKitPCIeX4Periphery.scala:23:37: missing argument list for method crossIntOut in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossIntOut _` or `crossIntOut(_)(_)` instead of `crossIntOut`.[0m
+[0m[[0m[31merror[0m] [0m[0m  ibus.fromSync := pf_eval_kit_pcie.crossIntOut := pf_eval_kit_pcie.intnode[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxua280mig/XilinxUA280MIG.scala:169:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxua280mig/XilinxUA280MIGPeriphery.scala:16:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Core complex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxua280mig/XilinxUA280MIGPeriphery.scala:17:26: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  xilinxua280mig.node := memBuses.head.toDRAMController(Some("xilinxua280mig"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707mig/XilinxVC707MIG.scala:26:68: not found: type SubsystemClockCrossing[0m
+[0m[[0m[31merror[0m] [0m[0mclass XilinxVC707MIGIsland(c : XilinxVC707MIGParams, val crossing: SubsystemClockCrossing = AsynchronousCrossing(8))(implicit p: Parameters) extends LazyModule with HasCrossing {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707mig/XilinxVC707MIG.scala:149:58: not found: type SubsystemClockCrossing[0m
+[0m[[0m[31merror[0m] [0m[0mclass XilinxVC707MIG(c : XilinxVC707MIGParams, crossing: SubsystemClockCrossing = AsynchronousCrossing(8))(implicit p: Parameters) extends LazyModule {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707mig/XilinxVC707MIG.scala:161:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707mig/XilinxVC707MIGPeriphery.scala:16:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Core complex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707pciex1/XilinxVC707PCIeX1.scala:10:8: object SubsystemClockCrossing is not a member of package freechips.rocketchip.subsystem[0m
+[0m[[0m[31merror[0m] [0m[0mimport freechips.rocketchip.subsystem.{SubsystemClockCrossing, HasCrossing, AsynchronousCrossing, CacheBlockBytes}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvc707pciex1/XilinxVC707PCIeX1.scala:30:63: not found: type SubsystemClockCrossing[0m
+[0m[[0m[31merror[0m] [0m[0mclass XilinxVC707PCIeX1(implicit p: Parameters, val crossing: SubsystemClockCrossing = AsynchronousCrossing(8))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu110mig/XilinxVCU110MIG.scala:151:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu110mig/XilinxVCU110MIGPeriphery.scala:16:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Core complex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu110mig/XilinxVCU110MIGPeriphery.scala:17:27: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  xilinxvcu110mig.node := memBuses.head.toDRAMController(Some("xilinxvcu110mig"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu118mig/XilinxVCU118MIG.scala:150:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu118mig/XilinxVCU118MIGPeriphery.scala:16:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Core complex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxvcu118mig/XilinxVCU118MIGPeriphery.scala:17:27: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  xilinxvcu118mig.node := memBuses.head.toDRAMController(Some("xilinxvcu118mig"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxzcu102mig/XilinxZCU102MIG.scala:128:27: missing argument list for method crossAXI4In in trait CrossesToOnlyOneClockDomain[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `crossAXI4In _` or `crossAXI4In(_)(_)` instead of `crossAXI4In`.[0m
+[0m[[0m[31merror[0m] [0m[0m    island.node := island.crossAXI4In := yank.node := deint.node := indexer.node := toaxi4.node := buffer.node[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxzcu102mig/XilinxZCU102MIGPeriphery.scala:10:11: not found: value nMemoryChannels[0m
+[0m[[0m[31merror[0m] [0m[0m  require(nMemoryChannels == 1, "Core complex must have 1 master memory port")[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/devices/xilinx/xilinxzcu102mig/XilinxZCU102MIGPeriphery.scala:11:27: not found: value memBuses[0m
+[0m[[0m[31merror[0m] [0m[0m  xilinxzcu102mig.node := memBuses.head.toDRAMController(Some("xilinxzcu102mig"))()[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/ChipLinkOverlay.scala:30:20: not found: value BundleBridge[0m
+[0m[[0m[31merror[0m] [0m[0m  val linkBridge = BundleBridge(new ChipLink(params.params))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/LEDOverlay.scala:21:35: value sink is not a member of freechips.rocketchip.diplomacy.BundleBridgeSource[chisel3.core.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m  val ledSink = shell { ledSource.sink }[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/SwitchOverlay.scala:21:33: value sink is not a member of freechips.rocketchip.diplomacy.BundleBridgeSource[chisel3.core.UInt][0m
+[0m[[0m[31merror[0m] [0m[0m  val switchSink = switchSource.sink[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/xilinx/ArtyShell.scala:173:34: value sampleDelay is not a member of sifive.blocks.devices.spi.SPIFlashParams[0m
+[0m[[0m[31merror[0m] [0m[0mError occurred in an application involving default arguments.[0m
+[0m[[0m[31merror[0m] [0m[0m        syncStages = qspi_params.sampleDelay[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/xilinx/VC707NewShell.scala:77:19: not found: value BundleBridge[0m
+[0m[[0m[31merror[0m] [0m[0m  val migBridge = BundleBridge(new XilinxVC707MIG(XilinxVC707MIGParams([0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/freedom/fpga-shells/src/main/scala/shell/xilinx/VC707NewShell.scala:107:20: not found: value BundleBridge[0m
+[0m[[0m[31merror[0m] [0m[0m  val pcieBridge = BundleBridge(new XilinxVC707PCIeX1)[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m35 errors found[0m
