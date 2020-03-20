@@ -1,1 +1,7 @@
 
+[submodule "sifive-blocks"]
+	path = sifive-blocks
+	url = https://github.com/hplp/sifive-blocks
+[submodule "rocket-chip"]
+	path = rocket-chip
+	url = https://github.com/hplp/rocket-chip
