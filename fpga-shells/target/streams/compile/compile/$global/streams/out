@@ -1,0 +1,22 @@
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:31:5: Symbol 'type sifive.fpgashells.ip.xilinx.ua280mig.UA280MIGIOClocksReset' is missing from the classpath.[0m
+[0m[[0m[31merror[0m] [0m[0mThis symbol is required by 'class sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO'.[0m
+[0m[[0m[31merror[0m] [0m[0mMake sure that type UA280MIGIOClocksReset is in your classpath and check for conflicting dependencies with `-Ylog-classpath`.[0m
+[0m[[0m[31merror[0m] [0m[0mA full rebuild may help if 'XilinxUA280MIGIO.class' was compiled against an incompatible version of sifive.fpgashells.ip.xilinx.ua280mig.[0m
+[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_sys_clk_i := sys_clock.asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:31:24: value c0_sys_clk_i is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
+[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_sys_clk_i := sys_clock.asUInt[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:32:56: value c0_ddr4_ui_clk is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
+[0m[[0m[31merror[0m] [0m[0m    mig_clock                    := dut.xilinxua280mig.c0_ddr4_ui_clk[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:33:56: value c0_ddr4_ui_clk_sync_rst is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
+[0m[[0m[31merror[0m] [0m[0m    mig_sys_reset                := dut.xilinxua280mig.c0_ddr4_ui_clk_sync_rst[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:35:24: value c0_ddr4_aresetn is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
+[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.c0_ddr4_aresetn   := mig_resetn[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/localtmp/ec9hc/PiMulator/freedom/fpga-shells/src/main/scala/shell/xilinx/UA280Shell.scala:36:24: value sys_rst is not a member of sifive.fpgashells.devices.xilinx.xilinxua280mig.XilinxUA280MIGIO[0m
+[0m[[0m[31merror[0m] [0m[0m    dut.xilinxua280mig.sys_rst   := sys_reset[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m6 errors found[0m
