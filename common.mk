@@ -48,6 +48,9 @@ $(firrtl): $(shell find $(base_dir)/src/main/scala -name '*.scala') $(FIRRTL_JAR
 	mkdir -p $(dir $@)
 	$(SBT) "runMain freechips.rocketchip.system.Generator $(BUILD_DIR) $(PROJECT) $(MODEL) $(CONFIG_PROJECT) $(CONFIG)"
 
+.PHONY: firrtl_jar
+firrtl_jar: $(FIRRTL_JAR)
+
 .PHONY: firrtl
 firrtl: $(firrtl)
 
@@ -87,6 +90,8 @@ $(bit): $(romgen) $(f)
 		-ip-vivado-tcls "$(shell find '$(BUILD_DIR)' -name '*.vivado.tcl')" \
 		-board "$(BOARD)"
 
+.PHONY: bit
+bit: $(bit)
 
 # Build .mcs
 mcs := $(BUILD_DIR)/obj/$(MODEL).mcs
